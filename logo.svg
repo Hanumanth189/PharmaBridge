@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle Background split gradient/white -->
+  <circle cx="200" cy="200" r="180" fill="#00A878"/>
+  <path d="M 200 20 A 180 180 0 0 1 200 380 Z" fill="#FFFFFF"/>
+  <circle cx="200" cy="200" r="180" stroke="#00A878" stroke-width="12" fill="none"/>
+
+  <!-- Pill graphic in center -->
+  <rect x="90" y="150" width="220" height="100" rx="50" fill="#00A878" stroke="#FFFFFF" stroke-width="12"/>
+  <path d="M 90 200 A 50 50 0 0 1 200 150 L 200 250 A 50 50 0 0 1 90 200 Z" fill="#FFFFFF"/>
+  
+  <!-- Sprouting leaves at top of pill -->
+  <path d="M 195 140 C 160 100 150 60 195 65 C 195 90 180 120 195 140 Z" fill="#00A878" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M 205 140 C 240 100 250 60 205 65 C 205 90 220 120 205 140 Z" fill="#00A878" stroke="#FFFFFF" stroke-width="4"/>
+</svg>

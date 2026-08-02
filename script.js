@@ -1,13 +1,20 @@
-// PharmaBridge Academy - JavaScript Engine
+// PharmaBridge Academy - JavaScript Engine (Implementation Guide V1.0)
 
 let materialsData = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
   initTabs();
   initMobileMenu();
-  initForm();
   await loadMaterials();
 });
+
+// Dismiss Welcome Overlay
+function dismissWelcome() {
+  const overlay = document.getElementById('welcomeOverlay');
+  if (overlay) {
+    overlay.classList.add('hidden');
+  }
+}
 
 // Load materials catalog from materials.json
 async function loadMaterials() {
@@ -23,7 +30,7 @@ async function loadMaterials() {
     if (materialsGrid) {
       materialsGrid.innerHTML = `
         <div class="card text-center" style="grid-column: 1 / -1;">
-          <p class="text-muted"><i class="fa-solid fa-triangle-exclamation"></i> Direct Git materials catalog ready. You can browse the repository at <a href="https://github.com/hanumanthpanuganti/pharmabridge-materials" target="_blank">github.com/hanumanthpanuganti/pharmabridge-materials</a></p>
+          <p class="text-muted"><i class="fa-solid fa-triangle-exclamation"></i> Direct study materials folder ready. Access directly on <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank">OneDrive Storage Folder</a></p>
         </div>
       `;
     }
@@ -40,7 +47,7 @@ function renderMaterials(items) {
       <div class="card text-center" style="grid-column: 1 / -1; padding: 48px;">
         <i class="fa-solid fa-folder-open icon-lg text-muted" style="font-size: 2.5rem; margin-bottom: 12px;"></i>
         <h4>No materials match your search query</h4>
-        <p class="text-muted">Try clearing your filters or searching for terms like "Excel", "SOP", "HPLC", "GCP", or "Resume".</p>
+        <p class="text-muted">Try clearing your filters or searching for terms like "Excel", "SOP", "HPLC", "GCP", or "CDM".</p>
       </div>
     `;
     return;
@@ -53,7 +60,7 @@ function renderMaterials(items) {
           <div class="mat-icon">
             <i class="fa-solid ${item.icon}"></i>
           </div>
-          <span class="mat-tag"><i class="fa-brands fa-github"></i> ${item.type}</span>
+          <span class="mat-tag"><i class="fa-solid fa-cloud"></i> ${item.type}</span>
         </div>
 
         <h3 class="mat-title">${item.title}</h3>
@@ -66,8 +73,8 @@ function renderMaterials(items) {
 
       <div class="mat-footer">
         <span class="mat-size"><i class="fa-regular fa-file"></i> ${item.fileSize}</span>
-        <a href="${item.gitPath}" target="_blank" class="btn btn-secondary btn-sm">
-          <i class="fa-brands fa-github"></i> Access Storage
+        <a href="${item.storageUrl}" target="_blank" class="btn btn-secondary btn-sm">
+          <i class="fa-solid fa-up-right-from-square"></i> Open Material
         </a>
       </div>
     </div>
@@ -136,12 +143,12 @@ function initTabs() {
   });
 }
 
-// Copy Git URL to Clipboard
-function copyGitUrl() {
-  const gitRepoUrl = "git clone https://github.com/hanumanthpanuganti/pharmabridge-materials.git";
-  const btn = document.getElementById('copyGitBtn');
+// Copy OneDrive Storage Link
+function copyStorageUrl() {
+  const storageUrl = "https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials";
+  const btn = document.getElementById('copyStorageBtn');
 
-  navigator.clipboard.writeText(gitRepoUrl).then(() => {
+  navigator.clipboard.writeText(storageUrl).then(() => {
     if (btn) {
       btn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
       btn.classList.remove('btn-secondary');
@@ -174,22 +181,10 @@ function initMobileMenu() {
         navMenu.style.top = '100%';
         navMenu.style.left = '0';
         navMenu.style.width = '100%';
-        navMenu.style.background = '#091E36';
+        navMenu.style.background = '#051120';
         navMenu.style.padding = '20px';
         navMenu.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
       }
     });
-  }
-}
-
-// Handle Enrollment Form Submission
-function handleFormSubmit(e) {
-  e.preventDefault();
-  const form = document.getElementById('enrollmentForm');
-  const successMsg = document.getElementById('formSuccess');
-
-  if (form && successMsg) {
-    form.classList.add('hidden');
-    successMsg.classList.remove('hidden');
   }
 }

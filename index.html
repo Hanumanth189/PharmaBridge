@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PharmaBridge Academy | Industry Readiness Program 2026</title>
-  <meta name="description" content="PharmaBridge Academy - Bridging Pharmacy Education with Industry Excellence. 55-Session Industry Readiness Program covering QA, QC, Regulatory, Digital Skills & Career Growth.">
-  <meta name="keywords" content="Pharmacy Education, Pharma Bridge Academy, Industry Readiness, Clinical Research, Regulatory Affairs, Pharmacovigilance, Advanced Excel Pharma, Panuganti Hanumantha Rao">
+  <meta name="description" content="PharmaBridge Academy - Industry Readiness Program. 60-Session Clinical & Manufacturing Tracks with Common Foundation, Prospectus 2026 & Implementation Guide.">
+  <meta name="keywords" content="Pharmacy Education, Pharma Bridge Academy, Clinical Track, Manufacturing Track, Clinical Data Management, Clinical Programming, Quality Control, Quality Assurance, Regulatory Affairs, Panuganti Hanumantha Rao">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,42 +20,105 @@
 </head>
 <body>
 
-  <!-- Announcement Bar -->
-  <div class="announcement-bar">
-    <div class="container announcement-content">
-      <span><i class="fa-solid fa-graduation-cap"></i> Admissions open for <strong>Industry Readiness Program 2026</strong> — 55 Structured Sessions across 3 Tracks</span>
-      <a href="#git-materials" class="announcement-link"><i class="fa-brands fa-github"></i> Access Student Git Repository <i class="fa-solid fa-arrow-right"></i></a>
+  <!-- Full-Screen Dynamic 3D DNA Helix Welcome Screen Overlay -->
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <!-- Moving Dual 3D DNA Helix Background Strands -->
+    <div class="dna-helix-bg">
+      <div class="dna-strand-left">
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+      </div>
+      
+      <div class="dna-strand-right">
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+        <div class="dna-pair"><span class="dna-node node-blue"></span><span class="dna-node"></span></div>
+        <div class="dna-pair"><span class="dna-node"></span><span class="dna-node node-blue"></span></div>
+      </div>
+    </div>
+
+    <!-- Luxury Welcome Card (Only Clean Title, Official Logo, Brochure ONLY, & Enter Button) -->
+    <div class="welcome-card">
+      <div class="welcome-logo-badge">
+        <img src="logo.svg" alt="PharmaBridge Academy Official Logo">
+      </div>
+
+      <h1 class="welcome-title-hero">
+        WELCOME TO <span class="gradient-text">PHARMABRIDGE ACADEMY</span>
+      </h1>
+
+      <!-- Clean Document Cards (ONLY Prospectus Brochure) -->
+      <div class="welcome-docs-grid">
+        <a href="https://1drv.ms/b/c/60251449553f7b82/IQBgmGx42h1BQI9IlXbDMckjAYx1_CG7SMUzc3exF9sh69g?e=5VRe8W" target="_blank" class="welcome-doc-card">
+          <div class="doc-card-left">
+            <div class="doc-card-icon text-red" style="background: rgba(239, 68, 68, 0.15);">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="doc-card-info">
+              <h4>Prospectus 2026 Brochure</h4>
+              <p>Official Academy Prospectus (PDF)</p>
+            </div>
+          </div>
+          <span class="btn btn-secondary btn-sm"><i class="fa-solid fa-download"></i> View PDF</span>
+        </a>
+      </div>
+
+      <button class="btn btn-primary btn-lg welcome-enter-btn" onclick="dismissWelcome()">
+        <i class="fa-solid fa-circle-play"></i> Enter Platform & Study Hub
+      </button>
     </div>
   </div>
 
-  <!-- Main Navigation Header -->
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-graduation-cap"></i> <strong>Programme Implementation Guide V1.0</strong> — 60 Sessions per Track | Weekend Format | Industry-Led</span>
+      <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank" class="announcement-link"><i class="fa-solid fa-cloud-arrow-down"></i> Open Study Materials Storage <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Clean Executive Main Navigation Header -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#" class="brand-logo">
-        <div class="logo-mark">
-          <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="35" cy="50" r="30" stroke="#00A878" stroke-width="12"/>
-            <circle cx="65" cy="50" r="30" stroke="#091E36" stroke-width="12" stroke-dasharray="140 40"/>
-          </svg>
-        </div>
+        <img src="logo.svg" alt="PharmaBridge Logo" class="logo-img">
         <div class="logo-text">
           <span class="brand-title">PHARMABRIDGE</span>
           <span class="brand-subtitle">ACADEMY</span>
         </div>
       </a>
 
+      <!-- Clean Nav Menu -->
       <nav class="nav-menu" id="navMenu">
-        <a href="#about" class="nav-link">Why Us</a>
-        <a href="#curriculum" class="nav-link">Curriculum</a>
-        <a href="#git-materials" class="nav-link">Git Material Storage</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#curriculum" class="nav-link">60-Session Tracks</a>
+        <a href="#documents" class="nav-link">Brochures & Guides</a>
         <a href="#pathways" class="nav-link">Career Pathways</a>
         <a href="#founder" class="nav-link">Founder</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <a href="https://github.com/hanumanthpanuganti/pharmabridge-materials" target="_blank" class="btn btn-secondary btn-sm">
-          <i class="fa-brands fa-github"></i> Git Storage
+        <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank" class="btn btn-secondary btn-sm">
+          <i class="fa-solid fa-folder-open"></i> Study Materials
         </a>
         <a href="#contact" class="btn btn-primary btn-sm">Enroll Now</a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
@@ -71,41 +134,44 @@
     <div class="container hero-container">
       <div class="hero-content">
         <div class="badge-pill">
-          <span class="badge-dot"></span> Prospectus 2026 • Industry Readiness Program
+          <span class="badge-dot"></span> Programme Implementation Guide V1.0 • Weekend Format
         </div>
         <h1 class="hero-title">Bridging Pharmacy Education with <span class="gradient-text">Industry Excellence</span></h1>
         <p class="hero-subtitle">
-          Preparing students for the modern pharmaceutical industry with <strong>55 structured sessions</strong>, hands-on digital skills, real-world case studies, and complete Git-hosted material repositories.
+          Structured <strong>60-session specialized pathways</strong> (Clinical Track & Manufacturing Track) featuring 34 Common Foundation sessions, live MNC Guest Speakers, and applied Industry Simulation Projects.
         </p>
 
         <div class="hero-cta-group">
-          <a href="#git-materials" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-folder-open"></i> Browse Git Materials
+          <a href="#curriculum" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-layer-group"></i> Explore Both Tracks
           </a>
-          <a href="#curriculum" class="btn btn-outline btn-lg">
-            <i class="fa-solid fa-book-open"></i> Explore 55 Sessions
+          <a href="https://1drv.ms/b/c/60251449553f7b82/IQBgmGx42h1BQI9IlXbDMckjAYx1_CG7SMUzc3exF9sh69g?e=5VRe8W" target="_blank" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-file-pdf text-red"></i> Prospectus 2026 Brochure
+          </a>
+          <a href="https://1drv.ms/b/c/60251449553f7b82/IQBI2vFxX_xfTKZrUSooeQ8cAdPx-swkFhS4r6O2lTD4RCw?e=GfhjjK" target="_blank" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-file-lines text-emerald"></i> Implementation Guide PDF
           </a>
         </div>
 
         <div class="hero-metrics">
           <div class="metric-card">
-            <span class="metric-number" data-target="55">55</span>
-            <span class="metric-label">Structured Sessions</span>
+            <span class="metric-number">60</span>
+            <span class="metric-label">Sessions Per Track</span>
           </div>
           <div class="metric-divider"></div>
           <div class="metric-card">
-            <span class="metric-number" data-target="3">3</span>
-            <span class="metric-label">Progressive Tracks</span>
+            <span class="metric-number">34</span>
+            <span class="metric-label">Common Foundation</span>
           </div>
           <div class="metric-divider"></div>
           <div class="metric-card">
-            <span class="metric-number" data-target="10">10</span>
-            <span class="metric-label">Career Pathways</span>
+            <span class="metric-number">2</span>
+            <span class="metric-label">Specialized Batches</span>
           </div>
           <div class="metric-divider"></div>
           <div class="metric-card">
-            <span class="metric-number" data-target="100">100%</span>
-            <span class="metric-label">Applied Learning</span>
+            <span class="metric-number">15</span>
+            <span class="metric-label">Weeks Duration</span>
           </div>
         </div>
       </div>
@@ -118,21 +184,22 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <span class="glass-title"><i class="fa-brands fa-git-alt"></i> git clone pharmabridge-materials</span>
+            <span class="glass-title"><i class="fa-solid fa-dna"></i> Program Architecture V1.0</span>
           </div>
           <div class="glass-body">
-            <div class="code-line"><span class="c-keyword">$</span> git clone https://github.com/pharmabridge/materials.git</div>
-            <div class="code-line"><span class="c-comment"># Initializing PharmaBridge 2026 Student Workspaces...</span></div>
-            <div class="code-line"><span class="c-success">✔ Track 1:</span> Knowledge Foundations (25 Sessions)</div>
-            <div class="code-line"><span class="c-success">✔ Track 2:</span> Digital & AI Tools (20 Sessions)</div>
-            <div class="code-line"><span class="c-success">✔ Track 3:</span> Career Launch (10 Sessions)</div>
-            <div class="code-line"><span class="c-info">ℹ Status:</span> 100% Ready for Student Download</div>
+            <div class="code-line"><span class="c-keyword">BATCH 1:</span> Clinical Track (60 Sessions)</div>
+            <div class="code-line"><span class="c-keyword">BATCH 2:</span> Manufacturing & Compliance Track (60 Sessions)</div>
+            <div class="code-line"><span class="c-comment"># Schedule: Saturday & Sunday (2 sessions/day = 4/week)</span></div>
+            <div class="code-line"><span class="c-success">✔ 34 Common Foundation:</span> GxP, Reg, Digital & AI</div>
+            <div class="code-line"><span class="c-success">✔ 20 Domain Specialisation:</span> Clinical / Manufacturing</div>
+            <div class="code-line"><span class="c-success">✔ 6 Industry Capstone:</span> End-to-End Simulation</div>
+            <div class="code-line"><span class="c-info">ℹ Certification:</span> Accredited Academic Partner</div>
 
             <div class="glass-feature-box">
-              <i class="fa-solid fa-graduation-cap feature-icon"></i>
+              <i class="fa-solid fa-user-gear feature-icon"></i>
               <div>
-                <h4>Direct Material Access</h4>
-                <p>All SOP templates, Excel datasets, regulatory guides, and ATS resume kits version-controlled on Git.</p>
+                <h4>Live Industry Guest Sessions</h4>
+                <p>Working MNC industry experts join live for doubt clearing & real-world context at the end of every domain module.</p>
               </div>
             </div>
           </div>
@@ -141,105 +208,133 @@
     </div>
   </section>
 
-  <!-- Section 2: Why PharmaBridge Academy -->
-  <section class="section section-dark-alt" id="about">
+  <!-- Section: Official PDF Documents & Downloads -->
+  <section class="section section-dark-alt" id="documents">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">THE PROSPECTUS</span>
-        <h2 class="section-title">Why PharmaBridge Academy?</h2>
+        <span class="section-tag">OFFICIAL BROCHURES & GUIDES</span>
+        <h2 class="section-title">Official PDF Documents</h2>
         <p class="section-description">
-          Closing the gap between academic pharmacy degrees and real-world pharmaceutical industry expectations.
+          Download or view the official PharmaBridge Academy Prospectus 2026 Brochure and Programme Implementation Guide V1.0.
         </p>
       </div>
 
-      <div class="grid grid-2 mb-12">
-        <div class="card info-box border-gradient">
-          <h3 class="card-title text-emerald"><i class="fa-solid fa-triangle-exclamation"></i> The Current Gap</h3>
-          <p>
-            Pharmacy students graduate with strong academic knowledge, but often have limited exposure to real industry practices, digital tools, and professional expectations of pharmaceutical employers.
-          </p>
-          <p>
-            Classroom learning rarely covers regulatory documentation, quality systems, or the software pharma teams use every day — leaving a visible gap between a degree and a first job.
-          </p>
+      <div class="grid grid-2 gap-6">
+        <div class="pdf-doc-card">
+          <div class="pdf-icon-wrapper">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <div class="pdf-doc-info">
+            <h4>PharmaBridge Prospectus 2026 Brochure</h4>
+            <p>Official 2026 Academy Prospectus covering mission, 55 sessions overview, 10 career pathways, and learning journey.</p>
+          </div>
+          <a href="https://1drv.ms/b/c/60251449553f7b82/IQBgmGx42h1BQI9IlXbDMckjAYx1_CG7SMUzc3exF9sh69g?e=5VRe8W" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Open PDF
+          </a>
         </div>
 
-        <div class="card info-box border-gradient">
-          <h3 class="card-title text-emerald"><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
-          <p>
-            PharmaBridge Academy bridges classroom education with pharmaceutical industry readiness through structured learning, applied projects, and career development.
-          </p>
-          <blockquote class="quote-box">
-            "Bridging pharmacy education with industry excellence is not a tagline — it is the discipline we teach every single day."
-            <footer>— PHARMABRIDGE ACADEMY</footer>
-          </blockquote>
-        </div>
-      </div>
-
-      <div class="grid grid-4 gap-6">
-        <div class="feature-card">
-          <div class="icon-wrapper red-tint"><i class="fa-solid fa-book-xmark"></i></div>
-          <span class="card-subtitle text-red">THE PROBLEM</span>
-          <h4>Knowledge Without Context</h4>
-          <p>Strong theory, little exposure to how QA, QC, and regulatory teams actually operate day to day.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-wrapper amber-tint"><i class="fa-solid fa-laptop-file"></i></div>
-          <span class="card-subtitle text-amber">THE PROBLEM</span>
-          <h4>Limited Digital Fluency</h4>
-          <p>Few graduates arrive comfortable with Excel, documentation standards, and AI tools pharma teams rely on.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-wrapper emerald-tint"><i class="fa-solid fa-diagram-project"></i></div>
-          <span class="card-subtitle text-emerald">THE SOLUTION</span>
-          <h4>Structured Bridge Program</h4>
-          <p>55 sessions across three tracks turn academic knowledge into measurable, job-ready skill.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-wrapper blue-tint"><i class="fa-solid fa-briefcase"></i></div>
-          <span class="card-subtitle text-blue">THE OUTCOME</span>
-          <h4>Confident, Industry Ready</h4>
-          <p>Students leave with career pathways mapped, portfolios built, and interview skills sharpened.</p>
+        <div class="pdf-doc-card">
+          <div class="pdf-icon-wrapper" style="background: rgba(0, 168, 120, 0.15); color: #00a878;">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <div class="pdf-doc-info">
+            <h4>Programme Implementation Guide V1.0</h4>
+            <p>Complete 14-page Implementation Guide covering Batch 1 Clinical Track, Batch 2 Manufacturing Track, and 34 Common Foundation breakdown.</p>
+          </div>
+          <a href="https://1drv.ms/b/c/60251449553f7b82/IQBI2vFxX_xfTKZrUSooeQ8cAdPx-swkFhS4r6O2lTD4RCw?e=GfhjjK" target="_blank" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-download"></i> Open PDF
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 3: Program Tracks & Curriculum (55 Sessions) -->
-  <section class="section" id="curriculum">
+  <!-- Section 2: Program Overview & Batches -->
+  <section class="section" id="overview">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">THE PROGRAM</span>
-        <h2 class="section-title">Industry Readiness Program Curriculum</h2>
+        <span class="section-tag">PROGRAMME AT A GLANCE</span>
+        <h2 class="section-title">Two Specialized 60-Session Tracks</h2>
         <p class="section-description">
-          A structured 55-session pathway designed to convert academic knowledge into measurable industry readiness across three progressive tracks.
+          A 34-session Common Foundation taken by both batches, followed by track-specific domain modules and a capstone Industry Simulation Project.
+        </p>
+      </div>
+
+      <div class="grid grid-2 mb-12">
+        <!-- Batch 1 Card -->
+        <div class="batch-card">
+          <div>
+            <span class="batch-badge batch-blue"><i class="fa-solid fa-vial"></i> BATCH 1</span>
+            <h3>Clinical Track</h3>
+            <p class="batch-sessions">60 Sessions Total • For Clinical Trial Execution, Data & Analytics Roles</p>
+            <ul class="batch-list">
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>34 Sessions:</strong> Common Foundation Curriculum</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>6 Sessions:</strong> Clinical Research & GCP</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>7 Sessions:</strong> Clinical Data Management (CDM)</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>7 Sessions:</strong> Clinical Programming (CDISC, SDTM, ADaM, SAS/R)</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>6 Sessions:</strong> Applied Industry Simulation Capstone</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>3 Guest Sessions:</strong> Live MNC Clinical Experts</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-block">Enroll in Clinical Track</a>
+        </div>
+
+        <!-- Batch 2 Card -->
+        <div class="batch-card">
+          <div>
+            <span class="batch-badge batch-emerald"><i class="fa-solid fa-industry"></i> BATCH 2</span>
+            <h3>Manufacturing & Compliance Track</h3>
+            <p class="batch-sessions">60 Sessions Total • For Manufacturing, Quality, Regulatory & PV Roles</p>
+            <ul class="batch-list">
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>34 Sessions:</strong> Common Foundation Curriculum</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>4 Sessions:</strong> Pharmaceutical Manufacturing & cGMP</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>4 Sessions:</strong> Quality Control (QC & HPLC Method Validation)</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>4 Sessions:</strong> Quality Assurance (QA, QMS & CAPA)</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>4 Sessions:</strong> Regulatory Affairs (USFDA, CDSCO, eCTD)</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>4 Sessions:</strong> Pharmacovigilance (ADR & MedDRA Coding)</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>6 Sessions:</strong> Applied Industry Simulation Capstone</li>
+              <li><i class="fa-solid fa-check text-emerald"></i> <strong>5 Guest Sessions:</strong> Live MNC Quality & Reg Experts</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-block">Enroll in Manufacturing Track</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Detailed Curriculum (34 Common Foundation + Domains) -->
+  <section class="section section-dark-alt" id="curriculum">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">FULL CURRICULUM</span>
+        <h2 class="section-title">Comprehensive 60-Session Curriculum</h2>
+        <p class="section-description">
+          Delivered across weekend sessions (Saturday & Sunday, two 1-hour sessions each day = 4 sessions/week for ~15 weeks).
         </p>
       </div>
 
       <!-- Track Selector Tabs -->
       <div class="tabs-wrapper">
         <div class="tabs-nav">
-          <button class="tab-btn active" data-track="knowledge">
-            <i class="fa-solid fa-flask"></i>
+          <button class="tab-btn active" data-track="foundation">
+            <i class="fa-solid fa-layer-group"></i>
             <div class="tab-text">
-              <span class="tab-title">Track 1: Knowledge</span>
-              <span class="tab-badge">25 Sessions</span>
+              <span class="tab-title">Common Foundation</span>
+              <span class="tab-badge">34 Sessions</span>
             </div>
           </button>
-          <button class="tab-btn" data-track="digital">
-            <i class="fa-solid fa-laptop-code"></i>
+          <button class="tab-btn" data-track="clinical">
+            <i class="fa-solid fa-notes-medical"></i>
             <div class="tab-text">
-              <span class="tab-title">Track 2: Digital Skills</span>
-              <span class="tab-badge">20 Sessions</span>
+              <span class="tab-title">Batch 1: Clinical Domain</span>
+              <span class="tab-badge">26 Sessions</span>
             </div>
           </button>
-          <button class="tab-btn" data-track="career">
-            <i class="fa-solid fa-user-tie"></i>
+          <button class="tab-btn" data-track="manufacturing">
+            <i class="fa-solid fa-microscope"></i>
             <div class="tab-text">
-              <span class="tab-title">Track 3: Career Readiness</span>
-              <span class="tab-badge">10 Sessions</span>
+              <span class="tab-title">Batch 2: Mfg & Compliance</span>
+              <span class="tab-badge">26 Sessions</span>
             </div>
           </button>
         </div>
@@ -247,99 +342,159 @@
 
       <!-- Track Content Views -->
       <div class="track-content-container">
-        <!-- Knowledge Track -->
-        <div class="track-pane active" id="track-knowledge">
+        <!-- Common Foundation Pane -->
+        <div class="track-pane active" id="track-foundation">
           <div class="track-header-card">
             <div>
-              <h3>Knowledge Track — Industry Foundations</h3>
-              <p>Core pharmaceutical science, drug development lifecycle, quality frameworks, and global regulatory foundations.</p>
+              <h3>Common Foundation Curriculum (34 Sessions)</h3>
+              <p>Taken by both batches before track-specific domain training begins to ensure complete baseline industry readiness.</p>
             </div>
-            <span class="sessions-pill">25 Sessions</span>
+            <span class="sessions-pill">34 Sessions</span>
           </div>
 
           <div class="grid grid-3 gap-4">
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Drug Development Lifecycle</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Clinical Research & GCP</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Pharmacovigilance (PV)</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Regulatory Affairs & eCTD</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Quality Assurance (QA) & SOPs</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Quality Control (QC) & HPLC</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Pharmaceutical Manufacturing</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Medical Writing Essentials</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> cGMP Audit Protocols</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Pharma Industry Overview (2 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Drug Development Lifecycle (4 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> GxP Fundamentals - GMP/GCP/GLP (5 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Documentation - SOP, BMR, TMF, CSR (6 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Regulatory Basics - USFDA/CDSCO (5 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Digital Skills - Excel & AI Tools (4 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Data & Tech - EDC, MedDRA, CDISC (2 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Quality & Ethics - ALCOA+ Data Integrity (2 Sessions)</div>
+            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Professional & Career Planning (4 Sessions)</div>
           </div>
         </div>
 
-        <!-- Digital Skills Track -->
-        <div class="track-pane" id="track-digital">
+        <!-- Clinical Track Pane -->
+        <div class="track-pane" id="track-clinical">
           <div class="track-header-card">
             <div>
-              <h3>Digital Skills Track — Tools & Technology</h3>
-              <p>Advanced Excel, AI tools for pharma, scientific communication, documentation standards, and clinical programming.</p>
+              <h3>Batch 1 — Clinical Track Domain Modules (26 Sessions)</h3>
+              <p>Specialized domain training for freshers aiming at roles in clinical trial execution, data management, and SAS/R programming.</p>
             </div>
-            <span class="sessions-pill">20 Sessions</span>
+            <span class="sessions-pill">60 Sessions Total</span>
           </div>
 
-          <div class="grid grid-3 gap-4">
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Advanced Excel for Pharma</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> AI Tools for Medical Writing</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Scientific Communication</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Pharma Documentation Standards</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Professional Slide decks & Pitching</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Data Cleaning & Visualization</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Clinical Data Basics (CDISC/SDTM)</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Python & R Overview for Pharma</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Version Control with Git</div>
+          <div class="grid grid-2 gap-6 mb-6">
+            <div class="card">
+              <h4 class="text-emerald mb-4"><i class="fa-solid fa-vial"></i> Clinical Research (6 Sessions)</h4>
+              <ul class="batch-list mb-0">
+                <li>• Overview of drug development phases (I–IV) and clinical trial types</li>
+                <li>• ICH-GCP guidelines and ethical principles in research</li>
+                <li>• Informed Consent Document (ICD) preparation and presentation</li>
+                <li>• Protocol, Investigator's Brochure, and study design basics</li>
+                <li>• Site operations: patient screening, enrolment, and visit workflows</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h4 class="text-emerald mb-4"><i class="fa-solid fa-database"></i> Clinical Data Management (7 Sessions)</h4>
+              <ul class="batch-list mb-0">
+                <li>• CRF/eCRF design and completion guidelines</li>
+                <li>• Data flow: collection, entry, cleaning, and query management</li>
+                <li>• Database design basics and edit checks</li>
+                <li>• Serious Adverse Event (SAE) data reconciliation & lock procedures</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid grid-2 gap-6">
+            <div class="card">
+              <h4 class="text-emerald mb-4"><i class="fa-solid fa-code"></i> Clinical Programming (7 Sessions)</h4>
+              <ul class="batch-list mb-0">
+                <li>• CDISC standards overview (SDTM and ADaM)</li>
+                <li>• Basics of SAS/R programming for clinical datasets</li>
+                <li>• Generating Tables, Listings, and Figures (TLFs) walkthrough</li>
+                <li>• Data validation, quality checks, and Statistical Analysis Plans (SAP)</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h4 class="text-emerald mb-4"><i class="fa-solid fa-bullseye"></i> Industry Simulation Capstone (6 Sessions)</h4>
+              <ul class="batch-list mb-0">
+                <li>• End-to-end clinical workflow capstone project</li>
+                <li>• Applied CRF completion, query resolution & TMF filing</li>
+                <li>• Complete EDC system walkthrough and audit readiness</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Career Readiness Track -->
-        <div class="track-pane" id="track-career">
+        <!-- Manufacturing Track Pane -->
+        <div class="track-pane" id="track-manufacturing">
           <div class="track-header-card">
             <div>
-              <h3>Career Readiness Track — Professional Launch</h3>
-              <p>Resume building, LinkedIn optimization, mock interview prep, communication skills, and structured career planning.</p>
+              <h3>Batch 2 — Manufacturing & Compliance Track Modules (26 Sessions)</h3>
+              <p>Specialized domain training for freshers aiming at roles in manufacturing, quality control, quality assurance, and regulatory affairs.</p>
             </div>
-            <span class="sessions-pill">10 Sessions</span>
+            <span class="sessions-pill">60 Sessions Total</span>
           </div>
 
-          <div class="grid grid-3 gap-4">
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> ATS Resume Building</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> LinkedIn Profile Optimization</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Technical & HR Interview Prep</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Corporate Communication</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Individual Career Mapping</div>
-            <div class="module-item"><i class="fa-solid fa-circle-check text-emerald"></i> Salary Negotiation & Onboarding</div>
+          <div class="grid grid-3 gap-6 mb-6">
+            <div class="card">
+              <h4 class="text-emerald mb-3"><i class="fa-solid fa-industry"></i> Manufacturing (4 Sessions)</h4>
+              <p class="text-muted text-sm mb-3">Solid, liquid & sterile dosage processes, cGMP principles, BMR execution, and line clearance controls.</p>
+            </div>
+
+            <div class="card">
+              <h4 class="text-emerald mb-3"><i class="fa-solid fa-flask"></i> Quality Control (4 Sessions)</h4>
+              <p class="text-muted text-sm mb-3">Sampling, testing instrumentation (HPLC, UV, dissolution), stability studies, and OOS investigation.</p>
+            </div>
+
+            <div class="card">
+              <h4 class="text-emerald mb-3"><i class="fa-solid fa-clipboard-check"></i> Quality Assurance (4 Sessions)</h4>
+              <p class="text-muted text-sm mb-3">Quality Management Systems (QMS), Deviation/CAPA management, SOP writing, and internal audits.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-3 gap-6">
+            <div class="card">
+              <h4 class="text-emerald mb-3"><i class="fa-solid fa-building-columns"></i> Regulatory Affairs (4 Sessions)</h4>
+              <p class="text-muted text-sm mb-3">Global health bodies (CDSCO, USFDA, EMA), CTD/eCTD dossier compilation, and product registration.</p>
+            </div>
+
+            <div class="card">
+              <h4 class="text-emerald mb-3"><i class="fa-solid fa-heart-pulse"></i> Pharmacovigilance (4 Sessions)</h4>
+              <p class="text-muted text-sm mb-3">Adverse event (ADR) reporting, ICSR processing, MedDRA coding basics, and signal detection (PSUR/PBRER).</p>
+            </div>
+
+            <div class="card">
+              <h4 class="text-emerald mb-3"><i class="fa-solid fa-bullseye"></i> Capstone Simulation (6 Sessions)</h4>
+              <p class="text-muted text-sm mb-3">Batch documentation execution, audit-trail review, mock deviation/CAPA, and audit simulation.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 4: Student Material Hub & Git Storage Integration -->
-  <section class="section section-dark-alt" id="git-materials">
+  <!-- Section 4: Study Materials Storage -->
+  <section class="section" id="storage-materials">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag"><i class="fa-brands fa-github"></i> VERSION CONTROLLED STORAGE</span>
-        <h2 class="section-title">Student Material Storage Hub</h2>
+        <span class="section-tag"><i class="fa-solid fa-cloud-arrow-down"></i> OFFICIAL STUDY MATERIALS</span>
+        <h2 class="section-title">Student Study Materials Storage</h2>
         <p class="section-description">
-          Keep your course materials, templates, datasets, and guides organized with direct links to Git storage repository.
+          Keep your course materials, templates, datasets, and guides organized with direct access to the official OneDrive study material storage.
         </p>
       </div>
 
-      <!-- Quick Git Clone Banner -->
+      <!-- Quick Cloud Storage Banner -->
       <div class="git-banner">
         <div class="git-banner-icon">
-          <i class="fa-brands fa-github"></i>
+          <i class="fa-solid fa-folder-open"></i>
         </div>
         <div class="git-banner-text">
-          <h4>Official Git Material Repository</h4>
-          <p>Students can clone or browse the central repository containing all 55 session workbooks, SOP templates, and reference materials.</p>
+          <h4>Official Study Materials Storage Folder</h4>
+          <p>Students can directly open and browse the central storage folder containing all session workbooks, SOP templates, and reference materials.</p>
         </div>
         <div class="git-banner-action">
           <div class="git-input-box">
-            <code id="gitRepoUrl">git clone https://github.com/hanumanthpanuganti/pharmabridge-materials.git</code>
-            <button class="btn btn-secondary btn-sm" id="copyGitBtn" onclick="copyGitUrl()">
+            <code id="storageUrlText">pharmaBridge_study materials</code>
+            <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-up-right-from-square"></i> Open Folder
+            </a>
+            <button class="btn btn-secondary btn-sm" id="copyStorageBtn" onclick="copyStorageUrl()">
               <i class="fa-regular fa-copy"></i> Copy Link
             </button>
           </div>
@@ -354,10 +509,10 @@
         </div>
 
         <div class="filter-pills">
-          <button class="filter-pill active" data-filter="all">All Tracks</button>
-          <button class="filter-pill" data-filter="knowledge">Knowledge</button>
-          <button class="filter-pill" data-filter="digital">Digital Skills</button>
-          <button class="filter-pill" data-filter="career">Career Readiness</button>
+          <button class="filter-pill active" data-filter="all">All Modules</button>
+          <button class="filter-pill" data-filter="foundation">Foundation</button>
+          <button class="filter-pill" data-filter="clinical">Clinical Track</button>
+          <button class="filter-pill" data-filter="manufacturing">Mfg & Compliance</button>
         </div>
       </div>
 
@@ -369,10 +524,10 @@
   </section>
 
   <!-- Section 5: 10 Career Pathways -->
-  <section class="section" id="pathways">
+  <section class="section section-dark-alt" id="pathways">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">OUTCOMES</span>
+        <span class="section-tag">CAREER OUTCOMES</span>
         <h2 class="section-title">Ten Pharmaceutical Career Pathways</h2>
         <p class="section-description">
           Students are prepared to enter ten key pharmaceutical industry pathways, each mapped to industry-recognized skills and job roles.
@@ -453,84 +608,7 @@
     </div>
   </section>
 
-  <!-- Section 6: Learning Experience & 5-Stage Journey -->
-  <section class="section section-dark-alt" id="journey">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">THE JOURNEY</span>
-        <h2 class="section-title">Progressive Five-Stage Learning Experience</h2>
-        <p class="section-description">
-          Carrying every student from classroom fundamentals to career-ready confidence.
-        </p>
-      </div>
-
-      <div class="journey-flow">
-        <div class="journey-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>Learn</h4>
-            <p>Build core pharmaceutical knowledge</p>
-          </div>
-        </div>
-        <div class="journey-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-
-        <div class="journey-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>Understand</h4>
-            <p>Connect concepts to real industry context</p>
-          </div>
-        </div>
-        <div class="journey-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-
-        <div class="journey-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>Practice</h4>
-            <p>Apply skills through structured exercises</p>
-          </div>
-        </div>
-        <div class="journey-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-
-        <div class="journey-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <h4>Apply</h4>
-            <p>Work on industry-style projects & cases</p>
-          </div>
-        </div>
-        <div class="journey-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-
-        <div class="journey-step">
-          <div class="step-num">5</div>
-          <div class="step-content">
-            <h4>Grow</h4>
-            <p>Advance into career-ready professionals</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-3 gap-6 mt-12">
-        <div class="highlight-box">
-          <h3>1:1</h3>
-          <span class="highlight-title">Mentor Guidance</span>
-          <p>Individualized check-ins and review of student coursework and portfolios.</p>
-        </div>
-        <div class="highlight-box">
-          <h3>Live</h3>
-          <span class="highlight-title">Case Studies</span>
-          <p>Real-world regulatory dossiers, audit findings, and data cleaning scenarios.</p>
-        </div>
-        <div class="highlight-box">
-          <h3>Hands-on</h3>
-          <span class="highlight-title">Skill Labs</span>
-          <p>Practical sessions with Excel, AI tools, SOP drafting, and ATS resume design.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 7: Founder Spotlight -->
+  <!-- Section 6: Founder Spotlight -->
   <section class="section" id="founder">
     <div class="container">
       <div class="founder-card">
@@ -563,7 +641,7 @@
             </div>
             <div class="contact-item">
               <i class="fa-solid fa-envelope"></i>
-              <span>hanumanthpanuganti@gmail.com</span>
+              <a href="mailto:hanumanthpanuganti@gmail.com" style="color: inherit;">hanumanthpanuganti@gmail.com</a>
             </div>
             <div class="contact-item">
               <i class="fa-solid fa-globe"></i>
@@ -575,54 +653,68 @@
     </div>
   </section>
 
-  <!-- Section 8: Contact & Enrollment -->
+  <!-- Section 7: Contact & Registration -->
   <section class="section section-dark-alt" id="contact">
     <div class="container">
       <div class="grid grid-2 gap-12 align-center">
         <div>
           <span class="section-tag">ENROLLMENT & INQUIRIES</span>
-          <h2 class="section-title">Ready to Bridge Your Career to Industry?</h2>
+          <h2 class="section-title">Ready to Launch Your Pharma Industry Career?</h2>
           <p class="mb-6 text-muted">
-            Join the <strong>Industry Readiness Program 2026</strong>. Submit your details below to receive program schedules, fee structures, and immediate access to the Git student repository.
+            Select your preferred track (<strong>Clinical Track</strong> or <strong>Manufacturing & Compliance Track</strong>) and register below to receive schedule details and immediate access to study materials.
           </p>
 
           <div class="feature-list">
             <div class="feature-list-item">
               <i class="fa-solid fa-circle-check text-emerald"></i>
-              <span>Access to 55 Live/Recorded Sessions across 3 tracks</span>
+              <span>60 Sessions total (34 Foundation + 20 Domain + 6 Capstone)</span>
             </div>
             <div class="feature-list-item">
               <i class="fa-solid fa-circle-check text-emerald"></i>
-              <span>Complete Git storage repository with SOPs & templates</span>
+              <span>Weekend schedule (Sat & Sun, 4 sessions/week ~15 weeks)</span>
             </div>
             <div class="feature-list-item">
               <i class="fa-solid fa-circle-check text-emerald"></i>
-              <span>1:1 Mentor Guidance & ATS Resume Optimization</span>
+              <span>Direct registration email sent to hanumanthpanuganti@gmail.com</span>
             </div>
           </div>
         </div>
 
         <div class="card form-card">
           <h3 class="form-title">Student Registration</h3>
-          <form id="enrollmentForm" onsubmit="handleFormSubmit(event)">
+          
+          <form id="enrollmentForm" action="https://formsubmit.co/hanumanthpanuganti@gmail.com" method="POST">
+            <!-- FormSubmit Config -->
+            <input type="hidden" name="_subject" value="New Student Registration - PharmaBridge Academy">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
             <div class="form-group">
               <label for="fullName">Full Name *</label>
-              <input type="text" id="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+              <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required>
             </div>
 
             <div class="form-group">
               <label for="email">Email Address *</label>
-              <input type="email" id="email" class="form-control" placeholder="rahul@example.com" required>
+              <input type="email" id="email" name="email" class="form-control" placeholder="rahul@example.com" required>
             </div>
 
             <div class="form-group">
               <label for="phone">Phone Number / WhatsApp *</label>
-              <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210" required>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            </div>
+
+            <div class="form-group">
+              <label for="preferredTrack">Preferred Track *</label>
+              <select id="preferredTrack" name="preferredTrack" class="form-control">
+                <option value="Batch 1 - Clinical Track (60 Sessions)">Batch 1 — Clinical Track (60 Sessions)</option>
+                <option value="Batch 2 - Manufacturing & Compliance Track (60 Sessions)">Batch 2 — Manufacturing & Compliance Track (60 Sessions)</option>
+              </select>
             </div>
 
             <div class="form-group">
               <label for="qualification">Academic Qualification</label>
-              <select id="qualification" class="form-control">
+              <select id="qualification" name="qualification" class="form-control">
                 <option value="B.Pharm">B.Pharm Student / Graduate</option>
                 <option value="M.Pharm">M.Pharm Student / Graduate</option>
                 <option value="Pharm.D">Pharm.D Student / Graduate</option>
@@ -631,15 +723,10 @@
               </select>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">
-              <i class="fa-solid fa-paper-plane"></i> Submit & Request Git Access
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fa-solid fa-paper-plane"></i> Submit Registration
             </button>
           </form>
-          <div id="formSuccess" class="form-success-msg hidden">
-            <i class="fa-solid fa-circle-check text-emerald icon-lg"></i>
-            <h4>Registration Received!</h4>
-            <p>Thank you. We have sent the Git storage link and prospectus details to your email.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -653,28 +740,26 @@
           <span class="brand-title">PHARMABRIDGE</span>
           <span class="brand-subtitle">ACADEMY</span>
         </div>
-        <p class="footer-desc">Bridging Pharmacy Education with Industry Excellence. Prospectus 2026.</p>
+        <p class="footer-desc">Bridging Pharmacy Education with Industry Excellence. Programme Implementation Guide V1.0.</p>
       </div>
 
       <div class="footer-links">
         <div class="footer-col">
           <h4>Navigation</h4>
-          <a href="#about">Why Us</a>
-          <a href="#curriculum">55 Sessions</a>
-          <a href="#git-materials">Git Materials</a>
-          <a href="#pathways">10 Pathways</a>
+          <a href="#overview">Overview</a>
+          <a href="#curriculum">60 Sessions</a>
+          <a href="#documents">Brochures & PDFs</a>
+          <a href="#storage-materials">Study Materials</a>
         </div>
         <div class="footer-col">
-          <h4>Tracks</h4>
-          <a href="#curriculum">Knowledge Track (25)</a>
-          <a href="#curriculum">Digital Skills (20)</a>
-          <a href="#curriculum">Career Readiness (10)</a>
+          <h4>PDF Downloads</h4>
+          <a href="https://1drv.ms/b/c/60251449553f7b82/IQBgmGx42h1BQI9IlXbDMckjAYx1_CG7SMUzc3exF9sh69g?e=5VRe8W" target="_blank"><i class="fa-solid fa-file-pdf"></i> Prospectus 2026 Brochure</a>
+          <a href="https://1drv.ms/b/c/60251449553f7b82/IQBI2vFxX_xfTKZrUSooeQ8cAdPx-swkFhS4r6O2lTD4RCw?e=GfhjjK" target="_blank"><i class="fa-solid fa-file-lines"></i> Implementation Guide PDF</a>
         </div>
         <div class="footer-col">
-          <h4>Git Storage</h4>
-          <a href="https://github.com/hanumanthpanuganti/pharmabridge-materials" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repository</a>
-          <a href="https://github.com/hanumanthpanuganti/pharmabridge-materials/tree/main/knowledge-track" target="_blank">Knowledge Workbooks</a>
-          <a href="https://github.com/hanumanthpanuganti/pharmabridge-materials/tree/main/digital-skills" target="_blank">Excel & AI Workbooks</a>
+          <h4>Study Materials</h4>
+          <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank"><i class="fa-solid fa-cloud"></i> OneDrive Storage Folder</a>
+          <a href="mailto:hanumanthpanuganti@gmail.com"><i class="fa-solid fa-envelope"></i> Email Support</a>
         </div>
       </div>
     </div>
