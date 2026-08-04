@@ -503,6 +503,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -545,6 +546,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -564,6 +566,17 @@ a:hover {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    white-space: normal;
+    text-align: center;
+  }
+  .nav-actions {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .mobile-toggle {
@@ -1434,6 +1447,13 @@ a:hover {
   gap: 12px;
   color: var(--text-muted);
   font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.contact-item span,
+.contact-item a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .contact-item i {
@@ -1554,6 +1574,7 @@ a:hover {
 @media (max-width: 1024px) {
   .nav-menu { display: none; }
   .mobile-toggle { display: block; }
+  .nav-actions { width: 100%; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }
   .hero-container { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
@@ -1562,6 +1583,9 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-title { font-size: 2.3rem; }
+  .nav-actions { justify-content: center; }
+  .nav-menu { padding: 0; }
+  .nav-menu a { width: 100%; margin-bottom: 10px; }
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr; }
