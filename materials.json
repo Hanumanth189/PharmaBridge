@@ -3,11 +3,11 @@
     "id": "doc-01",
     "track": "Official Documents",
     "trackId": "foundation",
-    "title": "PharmaBridge Prospectus 2026 (Official PDF)",
+    "title": "PharmaBridge Prospectus 2026 Brochure",
     "category": "Official Prospectus",
     "type": "Official PDF",
     "icon": "fa-file-pdf",
-    "description": "Official 2026 Academy Prospectus covering mission, 55 sessions overview, 10 career pathways, and learning journey.",
+    "description": "Official Academy Prospectus covering mission, 55 sessions overview, 10 career pathways, and learning journey.",
     "storageUrl": "https://1drv.ms/b/c/60251449553f7b82/IQBgmGx42h1BQI9IlXbDMckjAYx1_CG7SMUzc3exF9sh69g?e=5VRe8W",
     "fileSize": "2.8 MB",
     "tags": ["Prospectus 2026", "PDF Download", "Official Brochure"]
@@ -16,14 +16,14 @@
     "id": "doc-02",
     "track": "Official Documents",
     "trackId": "foundation",
-    "title": "Programme Implementation Guide V1.0 (Official PDF)",
+    "title": "Programme Implementation Guide",
     "category": "Implementation Guide",
     "type": "Official PDF",
     "icon": "fa-file-lines",
     "description": "Complete 14-page Implementation Guide covering Batch 1 Clinical Track (60 Sessions), Batch 2 Manufacturing Track (60 Sessions), and 34 Common Foundation breakdown.",
     "storageUrl": "https://1drv.ms/b/c/60251449553f7b82/IQBI2vFxX_xfTKZrUSooeQ8cAdPx-swkFhS4r6O2lTD4RCw?e=GfhjjK",
     "fileSize": "3.5 MB",
-    "tags": ["Implementation Guide V1.0", "60 Sessions", "Weekend Format"]
+    "tags": ["Implementation Guide", "60 Sessions", "Weekend Format"]
   },
   {
     "id": "mat-01",
