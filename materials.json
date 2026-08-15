@@ -31,11 +31,11 @@
     "trackId": "foundation",
     "title": "Session 1: Pharmaceutical Industry Overview",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Introduction to the pharmaceutical industry, key players, and the drug lifecycle landscape.",
-    "storageUrl": "materials/Pharmaceutical_Industry_Overview_1.docx",
-    "fileSize": "939 KB",
+    "storageUrl": "materials/Pharmaceutical_Industry_Overview_1.pdf",
+    "fileSize": "363 KB",
     "tags": ["Session 1", "Foundation", "Industry Overview"]
   },
   {
@@ -44,11 +44,11 @@
     "trackId": "foundation",
     "title": "Session 2: Drug Development Lifecycle",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "End-to-end drug development stages from discovery through post-market surveillance.",
-    "storageUrl": "materials/Drug_Development_Lifecycle_2.docx",
-    "fileSize": "1,029 KB",
+    "storageUrl": "materials/Drug_Development_Lifecycle_2.pdf",
+    "fileSize": "397 KB",
     "tags": ["Session 2", "Foundation", "Drug Development"]
   },
   {
@@ -57,11 +57,11 @@
     "trackId": "foundation",
     "title": "Session 3: GxP Fundamentals & Compliance",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Comprehensive reference covering GMP, GCP, GLP, GDP, GVP, and GCLP standards required across all pharmaceutical job interviews.",
-    "storageUrl": "materials/GxP_Fundamentals_3.docx",
-    "fileSize": "1,029 KB",
+    "storageUrl": "materials/GxP_Fundamentals_3.pdf",
+    "fileSize": "372 KB",
     "tags": ["Session 3", "GMP", "GCP", "GLP", "GxP Compliance"]
   },
   {
@@ -70,11 +70,11 @@
     "trackId": "foundation",
     "title": "Session 4: Documentation in Pharma (SOP, Protocol, CRF)",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Standard Operating Procedures (SOP), Clinical Protocol, CRF, Batch Records (BMR), TMF, and CSR explanation frameworks.",
-    "storageUrl": "materials/Documentation_in_Pharma_4.docx",
-    "fileSize": "1,043 KB",
+    "storageUrl": "materials/Documentation_in_Pharma_4.pdf",
+    "fileSize": "374 KB",
     "tags": ["Session 4", "SOP", "Protocol", "CRF", "BMR", "TMF"]
   },
   {
@@ -83,11 +83,11 @@
     "trackId": "foundation",
     "title": "Session 5: Regulatory Compliance Basics",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Overview of global health authorities (USFDA, CDSCO, EMA, MHRA) and audit inspection readiness principles.",
-    "storageUrl": "materials/Regulatory_Compliance_Basics_5.docx",
-    "fileSize": "998 KB",
+    "storageUrl": "materials/Regulatory_Compliance_Basics_5.pdf",
+    "fileSize": "404 KB",
     "tags": ["Session 5", "USFDA", "CDSCO", "EMA", "MHRA"]
   },
   {
@@ -96,11 +96,11 @@
     "trackId": "foundation",
     "title": "Session 6: Data & Technology in Pharma",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Advanced Excel formulas (XLOOKUP, Pivot Tables), AI tools for scientific literature search, and professional email writing standards.",
-    "storageUrl": "materials/Data_Technology_in_Pharma_6.docx",
-    "fileSize": "1,043 KB",
+    "storageUrl": "materials/Data_Technology_in_Pharma_6.pdf",
+    "fileSize": "366 KB",
     "tags": ["Session 6", "Advanced Excel", "AI Tools", "Corporate Email"]
   },
   {
@@ -109,11 +109,11 @@
     "trackId": "foundation",
     "title": "Session 7: Quality and Ethics",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Quality principles and professional ethics expected across pharmaceutical roles.",
-    "storageUrl": "materials/Quality_and_Ethics_7.docx",
-    "fileSize": "1,070 KB",
+    "storageUrl": "materials/Quality_and_Ethics_7.pdf",
+    "fileSize": "385 KB",
     "tags": ["Session 7", "Quality", "Ethics"]
   },
   {
@@ -122,11 +122,11 @@
     "trackId": "foundation",
     "title": "Session 8: Professional Skills",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Workplace communication, teamwork, and professional skills for pharma careers.",
-    "storageUrl": "materials/Professional_Skills_8.docx",
-    "fileSize": "951 KB",
+    "storageUrl": "materials/Professional_Skills_8.pdf",
+    "fileSize": "352 KB",
     "tags": ["Session 8", "Professional Skills"]
   },
   {
@@ -135,11 +135,11 @@
     "trackId": "foundation",
     "title": "Session 9: Career Planning",
     "category": "Common Foundation (34 Sessions)",
-    "type": "Session Notes",
-    "icon": "fa-file-word",
+    "type": "Session Notes (PDF)",
+    "icon": "fa-file-pdf",
     "description": "Career pathway planning across clinical and manufacturing tracks in the pharmaceutical industry.",
-    "storageUrl": "materials/Career_Planning_9.docx",
-    "fileSize": "1,073 KB",
+    "storageUrl": "materials/Career_Planning_9.pdf",
+    "fileSize": "391 KB",
     "tags": ["Session 9", "Career Planning"]
   }
 ]
