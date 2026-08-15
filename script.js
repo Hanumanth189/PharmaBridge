@@ -33,7 +33,7 @@ async function loadMaterials() {
     if (materialsGrid) {
       materialsGrid.innerHTML = `
         <div class="card text-center" style="grid-column: 1 / -1;">
-          <p class="text-muted"><i class="fa-solid fa-triangle-exclamation"></i> Direct study materials folder ready. Access directly on <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank">OneDrive Storage Folder</a></p>
+          <p class="text-muted"><i class="fa-solid fa-triangle-exclamation"></i> Couldn't load study materials right now. Please refresh the page or try again shortly.</p>
         </div>
       `;
     }
@@ -146,27 +146,6 @@ function initTabs() {
   });
 }
 
-// Copy OneDrive Storage Link
-function copyStorageUrl() {
-  const storageUrl = "https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials";
-  const btn = document.getElementById('copyStorageBtn');
-
-  navigator.clipboard.writeText(storageUrl).then(() => {
-    if (btn) {
-      btn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
-      btn.classList.remove('btn-secondary');
-      btn.classList.add('btn-primary');
-
-      setTimeout(() => {
-        btn.innerHTML = `<i class="fa-regular fa-copy"></i> Copy Link`;
-        btn.classList.remove('btn-primary');
-        btn.classList.add('btn-secondary');
-      }, 2500);
-    }
-  }).catch(err => {
-    console.error('Could not copy text: ', err);
-  });
-}
 
 // Mobile Menu Toggle
 function initMobileMenu() {
@@ -338,7 +317,7 @@ async function loadMaterials() {
     if (materialsGrid) {
       materialsGrid.innerHTML = `
         <div class="card text-center" style="grid-column: 1 / -1;">
-          <p class="text-muted"><i class="fa-solid fa-triangle-exclamation"></i> Direct study materials folder ready. Access directly on <a href="https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials" target="_blank">OneDrive Storage Folder</a></p>
+          <p class="text-muted"><i class="fa-solid fa-triangle-exclamation"></i> Couldn't load study materials right now. Please refresh the page or try again shortly.</p>
         </div>
       `;
     }
@@ -451,27 +430,6 @@ function initTabs() {
   });
 }
 
-// Copy OneDrive Storage Link
-function copyStorageUrl() {
-  const storageUrl = "https://onedrive.live.com/my?id=%2Fpersonal%2F60251449553f7b82%2FDocuments%2FpharmaBridge%5Fstudy%20materials";
-  const btn = document.getElementById('copyStorageBtn');
-
-  navigator.clipboard.writeText(storageUrl).then(() => {
-    if (btn) {
-      btn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
-      btn.classList.remove('btn-secondary');
-      btn.classList.add('btn-primary');
-
-      setTimeout(() => {
-        btn.innerHTML = `<i class="fa-regular fa-copy"></i> Copy Link`;
-        btn.classList.remove('btn-primary');
-        btn.classList.add('btn-secondary');
-      }, 2500);
-    }
-  }).catch(err => {
-    console.error('Could not copy text: ', err);
-  });
-}
 
 // Mobile Menu Toggle
 function initMobileMenu() {
